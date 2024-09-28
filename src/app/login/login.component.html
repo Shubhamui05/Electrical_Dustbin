@@ -1,6 +1,7 @@
-<!-- login.component.html -->
+
+
 <div class="login-body-container">
-    <div class="container" [ngClass]="{ 'log-in': isLogin, 'active': loginInProgress }">
+  <div class="container" [ngClass]="{ 'log-in': isLogin, 'active': loginInProgress }">
       <div class="box"></div>
       <div class="container-forms">
         <div class="container-info">
@@ -21,17 +22,19 @@
             </div>
           </div>
         </div>
+    
         <div class="container-form">
-          <div class="form-item log-in" *ngIf="isLogin">
+          <div class="form-item log-in">
             <div class="table">
               <div class="table-cell">
-                <input name="Username" placeholder="Username" type="text" [(ngModel)]="username" required />
+                <input name="Username" placeholder="Username" type="text"   [(ngModel)]="username" required />
                 <input name="Password" placeholder="Password" type="password" [(ngModel)]="password" required/>
                 <div class="btn" (click)="login()">Log in</div>
               </div>
             </div>
           </div>
-          <div class="form-item sign-up" *ngIf="!isLogin">
+    
+          <div class="form-item sign-up">
             <div class="table">
               <div class="table-cell">
                 <input name="email" placeholder="Email" type="text" />
