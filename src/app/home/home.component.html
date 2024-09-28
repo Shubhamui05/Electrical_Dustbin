@@ -1,6 +1,6 @@
-<p>home works!</p>
+
 <div class="body-container">
-  <section class="hero">
+  <section class="header-hero">
     <header class="navbar">
       <div class="logo">
         <img src="logo.png" alt="Company Logo">
@@ -14,14 +14,14 @@
       </nav>
     </header>
     
-    <div class="hero-content">
+    <div class="heder-hero-content">
       <div class="text-content">
         <h1>REDUCE<br><span>RECYCLE</span><br>REUSE</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet lacus enim.</p>
         <button class="cta-button">Learn More</button>
       </div>
       <div class="image-content">
-        <img src="assets\image\img1.png" alt="Recycling Bin" class="recycle-bin">
+        <!-- <img src="assets\image\main-header.png" alt="Recycling Bin" class="recycle-bin"> -->
         <!-- <img src="women.png" alt="Man Image" class="man-image">
         <img src="woman.png" alt="Woman Image" class="woman-image">
         <img src="box.png" alt="Box Image" class="box-image">
@@ -31,6 +31,36 @@
     </div>
   </section>
 </div>
+ 
+<div class="landing-container">
+  <!-- Main Content Section -->
+  <section class="main-content">
+    <h1>Welcome to my Portfolio</h1>
+    <p>Discover amazing content and learn something new every day.</p>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="cards-container">
+    <div class="card" *ngFor="let card of cards">
+      <div class="card-content">
+        <img [src]="card.img" alt="{{ card.title }} Image" class="card-image">
+        <h2>{{ card.title }}</h2>
+        <p>{{ card.description }}</p>
+      </div>
+    </div>
+  </section>
+  
+
+
+<section class="cards-container">
+  <div class="card" *ngFor="let card of secondCard">
+    <div class="card-content">
+      <h3>{{ card.title }}</h3>
+      <p>{{ card.description }}</p>
+    </div>
+  </div>
+</section>
+
 
 
 
