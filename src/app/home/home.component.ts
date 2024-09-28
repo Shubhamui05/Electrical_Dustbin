@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';  // Import RouterModule
 
 @Component({
   selector: 'app-home',
-  standalone: true,
-  imports: [HomeComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css'],
+  standalone: true,
+  imports: [RouterModule]  // Add RouterModule here
 })
-export class HomeComponent {
-
-}
+export class HomeComponent { }

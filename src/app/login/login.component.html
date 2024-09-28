@@ -1,0 +1,49 @@
+<!-- login.component.html -->
+<div class="login-body-container">
+    <div class="container" [ngClass]="{ 'log-in': isLogin, 'active': loginInProgress }">
+      <div class="box"></div>
+      <div class="container-forms">
+        <div class="container-info">
+          <div class="info-item">
+            <div class="table">
+              <div class="table-cell">
+                <p>Have an account?</p>
+                <div class="btn" (click)="toggleLogin()">Log in</div>
+              </div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="table">
+              <div class="table-cell">
+                <p>Don't have an account?</p>
+                <div class="btn" (click)="toggleLogin()">Sign up</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-form">
+          <div class="form-item log-in" *ngIf="isLogin">
+            <div class="table">
+              <div class="table-cell">
+                <input name="Username" placeholder="Username" type="text" [(ngModel)]="username" required />
+                <input name="Password" placeholder="Password" type="password" [(ngModel)]="password" required/>
+                <div class="btn" (click)="login()">Log in</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-item sign-up" *ngIf="!isLogin">
+            <div class="table">
+              <div class="table-cell">
+                <input name="email" placeholder="Email" type="text" />
+                <input name="fullName" placeholder="Full Name" type="text" />
+                <input name="Username" placeholder="Username" type="text" />
+                <input name="Password" placeholder="Password" type="password" />
+                <div class="btn" (click)="signUp()">Sign up</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
