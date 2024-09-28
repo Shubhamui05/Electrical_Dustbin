@@ -40,6 +40,16 @@ export class HomeComponent {
       title: 'Card 6',
       description: 'This is the sixth card.',
       img: 'https://img.freepik.com/free-vector/people-recycling-concept_23-2148534589.jpg?t=st=1727466316~exp=1727469916~hmac=d58db24b9eaee4eb4d9b699e1fc923f6c4f9faf48351edfe702cb6419fa043d7&w=740',
+    },
+    {
+      title: 'Card 7',
+      description: 'This is the first card.',
+      img: 'https://img.freepik.com/free-vector/end-quarantine-concept_23-2148554366.jpg?uid=R150971852&ga=GA1.1.484307960.1726950447',
+    },
+    {
+      title: 'Card 8',
+      description: 'This is the second card.',
+      img: 'https://img.freepik.com/free-vector/waste-management-concept-illustration_114360-8725.jpg?uid=R150971852&ga=GA1.1.484307960.1726950447',
     }
   ];
 
