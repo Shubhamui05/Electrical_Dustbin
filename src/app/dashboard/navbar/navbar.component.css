@@ -1,0 +1,17 @@
+.navbar {
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+    padding: 10px;
+  }
+  
+  .navbar input[type="text"] {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #d1d3e2;
+    border-radius: 5px;
+  }
+  
+  .navbar .nav-item {
+    margin-right: 20px;
+  }
+  

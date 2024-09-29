@@ -4,15 +4,29 @@ import { DashboardComponent } from './dashboard/dashboard.component'; // Adjust 
 import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { 
-    path: 'home', component: HomeComponent 
+  {
+    path: '', redirectTo: 'home',
+    pathMatch: 'full'
   },
-  { 
-    path: 'login', component: LoginComponent 
+  {
+    path: 'home', component: HomeComponent
   },
-  { 
-    path: 'dashboard', component: DashboardComponent 
+  {
+    path: 'login', component: LoginComponent
   },
+  {
+    path: 'dashboard', component: DashboardComponent
+  },
+  {
+    path: 'home', component: HomeComponent
+  },
+  {
+    path: 'login', component: LoginComponent
+  },
+  {
+    path: 'dashboard', component: DashboardComponent
+  },
+
+
   // Add other routes here
 ];

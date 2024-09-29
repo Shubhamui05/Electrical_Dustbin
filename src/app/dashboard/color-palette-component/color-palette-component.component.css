@@ -1,0 +1,13 @@
+.color-palette {
+    display: flex;
+    justify-content: space-between;
+  }
+  .color {
+    width: 100px;
+    height: 100px;
+  }
+  .primary { background-color: #4e73df; }
+  .success { background-color: #1cc88a; }
+  .info { background-color: #36b9cc; }
+  .warning { background-color: #f6c23e; }
+  
